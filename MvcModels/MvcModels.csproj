@@ -132,7 +132,6 @@
     </Compile>
     <Compile Include="Infrastructure\AddressSummaryBinder.cs" />
     <Compile Include="Infrastructure\CountryValueProvider.cs" />
-    <Compile Include="Infrastructure\CustomValueProviderFactory.cs" />
     <Compile Include="Models\AddressSummary.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

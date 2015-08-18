@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using MvcModels.Infrastructure;
+using MvcModels.Models;
 
 namespace MvcModels
 {
@@ -19,7 +20,8 @@ namespace MvcModels
         {
             AreaRegistration.RegisterAllAreas();
 
-            ValueProviderFactories.Factories.Insert(0, new CustomValueProviderFactory());
+            //ValueProviderFactories.Factories.Insert(0, new CustomValueProviderFactory());
+            ModelBinders.Binders.Add(typeof(AddressSummary), new AddressSummaryBinder());
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
